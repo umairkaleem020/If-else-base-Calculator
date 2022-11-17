@@ -1,0 +1,96 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ifelseCalculater
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+             
+             Console.WriteLine("Calculator");
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("1.Add");
+            Console.WriteLine("2.Substract");
+            Console.WriteLine("3.Multiply");
+            Console.WriteLine("4.Divide");
+            Console.WriteLine("5.Modulas");
+            Console.WriteLine("6.Square Root");
+            Console.WriteLine("7.Power of Number");
+            Console.Write("Enter Choice(1-7):");
+            int ch = Int32.Parse(Console.ReadLine());
+            int a, b;
+                double c;
+            if (ch == 1)
+            {
+                Console.Write("Enter A:");
+                a = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter B:");
+                b = Convert.ToInt32(Console.ReadLine());
+                c = a + b;
+                Console.WriteLine("Sum = {0}", c);
+            }
+            else if (ch == 2)
+            {
+                Console.Write("Enter A:");
+                a = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter B:");
+                b = Convert.ToInt32(Console.ReadLine());
+                c = a - b;
+                Console.WriteLine("Difference = {0}", c);
+            }
+            else if (ch == 3)
+            {
+                Console.Write("Enter A:");
+                a = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter B:");
+                b = Convert.ToInt32(Console.ReadLine());
+                c = a * b;
+                Console.WriteLine("Product = {0}", c);
+            }
+            else if (ch == 4)
+            {
+                Console.Write("Enter A:");
+                a = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter B:");
+                b = Convert.ToInt32(Console.ReadLine());
+                c = a / b;
+                Console.WriteLine("Quotient = {0}", c);
+            }
+            else if (ch == 5)
+            {
+                Console.Write("Enter A:");
+                a = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter B:");
+                b = Convert.ToInt32(Console.ReadLine());
+                c = a % b;
+                Console.WriteLine("Modulus = {0}", c);
+            }
+            else if (ch == 6)
+            {
+                Console.Write("Enter Number:");
+                a = Convert.ToInt32(Console.ReadLine());
+                c = Math.Sqrt(a); 
+                Console.WriteLine("Square Root is = {0}", c);
+            }
+            else if (ch == 7)
+            {
+                Console.Write("Enter Base Number:");
+                a = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter Power Number:");
+                b = Convert.ToInt32(Console.ReadLine());
+                c = Math.Pow(a,b);
+                Console.WriteLine("Power of Number = {0}", c);
+            }
+            else
+            {
+                Console.WriteLine("Invalid Choice");
+            }
+            Console.ReadKey();
+          
+        }
+    }
+}
